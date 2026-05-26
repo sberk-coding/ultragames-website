@@ -15,7 +15,7 @@ async function loadServerStatus(){
 try{
 
 const response = await fetch(
-"https://api.mcsrvstat.us/2/play.ultragames.net"
+"https://api.mcsrvstat.us/2/cytooxien.de"
 );
 
 const data = await response.json();
