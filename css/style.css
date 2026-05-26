@@ -1024,3 +1024,54 @@ font-weight:700;
 
 margin-bottom:20px;
 }
+.maintenance-page{
+
+min-height:100vh;
+
+display:flex;
+flex-direction:column;
+
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+padding:40px;
+}
+
+.maintenance-page h1{
+
+font-size:6rem;
+
+margin-bottom:20px;
+}
+
+.maintenance-page h2{
+
+font-size:3rem;
+
+color:#22d3ee;
+
+margin-bottom:30px;
+}
+
+.maintenance-page p{
+
+color:#cccccc;
+
+font-size:1.2rem;
+}
+
+.maintenance-status{
+
+margin-top:40px;
+
+padding:20px 30px;
+
+border-radius:20px;
+
+background:#ffffff08;
+
+border:
+1px solid #ffffff10;
+}
