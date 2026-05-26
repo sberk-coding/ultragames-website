@@ -1,7 +1,6 @@
 import {
 Client,
-Account,
-Databases
+Account
 }
 from "https://cdn.jsdelivr.net/npm/appwrite@15.0.0/+esm";
 
@@ -12,11 +11,8 @@ client
 "https://cloud.appwrite.io/v1"
 )
 .setProject(
-"6a156f3c00292515cea9"
+"DEINE_PROJECT_ID"
 );
 
 export const account =
 new Account(client);
-
-export const databases =
-new Databases(client);
