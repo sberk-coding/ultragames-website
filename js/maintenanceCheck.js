@@ -1,6 +1,6 @@
 import {
 databases,
-DATABASE_ID
+6a15726400182ebba703
 }
 from "./appwrite.js";
 
@@ -25,7 +25,7 @@ return;
 
 const doc =
 await databases.getDocument(
-DATABASE_ID,
+6a15726400182ebba703,
 SETTINGS_TABLE_ID,
 SETTINGS_DOC_ID
 );
