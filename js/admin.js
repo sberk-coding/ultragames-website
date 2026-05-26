@@ -1,7 +1,7 @@
 import {
 databases,
 6a15726400182ebba703,
-NEWS_TABLE_ID,
+news,
 account
 }
 from "./appwrite.js";
@@ -71,7 +71,7 @@ try{
 await databases.createDocument(
 
 6a15726400182ebba703,
-NEWS_TABLE_ID,
+news,
 
 ID.unique(),
 
