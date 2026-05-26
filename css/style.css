@@ -1208,3 +1208,21 @@ background:#ffffff08;
 border:
 1px solid #ffffff10;
 }
+.discord-section{
+
+padding:80px 30px;
+
+max-width:1200px;
+
+margin:auto;
+}
+
+.discord-section iframe{
+
+border-radius:30px;
+
+border:1px solid #ffffff10;
+
+box-shadow:
+0 0 20px #22d3ee22;
+}
