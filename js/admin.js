@@ -136,3 +136,71 @@ document.getElementById(
 "category"
 ).value;
 category:category,
+import {
+databases,
+DATABASE_ID
+}
+from "./appwrite.js";
+
+const SETTINGS_TABLE_ID =
+"SETTINGS_TABLE_ID";
+
+const SETTINGS_DOC_ID =
+"SETTINGS_DOC_ID";
+
+const maintenanceBtn =
+document.getElementById(
+"maintenanceBtn"
+);
+
+const maintenanceStatus =
+document.getElementById(
+"maintenanceStatus"
+);
+
+async function loadMaintenance(){
+
+const doc =
+await databases.getDocument(
+DATABASE_ID,
+SETTINGS_TABLE_ID,
+SETTINGS_DOC_ID
+);
+
+maintenanceStatus.innerHTML =
+
+doc.maintenance
+? "🛠️ Maintenance AKTIV"
+: "✅ Website ONLINE";
+
+}
+
+loadMaintenance();
+
+maintenanceBtn.addEventListener(
+"click",
+async()=>{
+
+const doc =
+await databases.getDocument(
+DATABASE_ID,
+SETTINGS_TABLE_ID,
+SETTINGS_DOC_ID
+);
+
+await databases.updateDocument(
+
+DATABASE_ID,
+SETTINGS_TABLE_ID,
+SETTINGS_DOC_ID,
+
+{
+maintenance:
+!doc.maintenance
+}
+
+);
+
+loadMaintenance();
+
+});
