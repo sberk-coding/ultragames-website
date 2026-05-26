@@ -5,7 +5,7 @@ databases,
 from "./appwrite.js";
 
 const SETTINGS_TABLE_ID =
-"SETTINGS_TABLE_ID";
+"settings";
 
 const SETTINGS_DOC_ID =
 "SETTINGS_DOC_ID";
@@ -26,7 +26,7 @@ return;
 const doc =
 await databases.getDocument(
 6a15726400182ebba703,
-SETTINGS_TABLE_ID,
+settings,
 SETTINGS_DOC_ID
 );
 
