@@ -1,7 +1,7 @@
 function copyIP(){
 
 navigator.clipboard.writeText(
-"play.ultragames.net"
+"cytooxien.de"
 );
 
 alert("Server-IP kopiert!");
