@@ -23,8 +23,8 @@ document.getElementById(
 
 await databases.createDocument(
 
-"DB_ID",
-"COLLECTION_ID",
+"6a15726400182ebba703",
+"news",
 
 ID.unique(),
 
