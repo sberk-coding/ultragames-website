@@ -13,7 +13,7 @@ const client = new Client();
 
 client
 .setEndpoint(
-"https://cloud.appwrite.io/v1"
+"https://fra.cloud.appwrite.io/v1"
 )
 .setProject(
 "6a156f3c00292515cea9"
@@ -33,18 +33,20 @@ new Databases(client);
 DATABASE IDS
 ========================= */
 
-/*
-HIER DEINE IDs EINTRAGEN
-*/
-
 export const DATABASE_ID =
 "6a15726400182ebba703";
 
 export const NEWS_TABLE_ID =
 "news";
 
+export const USERS_TABLE_ID =
+"users";
+
+export const SETTINGS_TABLE_ID =
+"settings";
+
 /* =========================
-TEST CONNECTION
+TEST
 ========================= */
 
 console.log(
