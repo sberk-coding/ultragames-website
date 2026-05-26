@@ -1,9 +1,16 @@
-import { account }
+import {
+account
+}
 from "./appwrite.js";
 
 const form =
 document.getElementById(
 "loginForm"
+);
+
+const message =
+document.getElementById(
+"loginMessage"
 );
 
 form.addEventListener(
@@ -24,19 +31,30 @@ document.getElementById(
 
 try{
 
+message.innerHTML =
+"Anmeldung läuft...";
+
 await account.createEmailPasswordSession(
 email,
 password
 );
 
+message.innerHTML =
+"✅ Erfolgreich eingeloggt";
+
+setTimeout(()=>{
+
 window.location.href =
-"admin.html";
+"./admin.html";
 
-}catch(err){
+},1000);
 
-alert(
-"Login fehlgeschlagen"
-);
+}catch(error){
+
+message.innerHTML =
+"❌ Login fehlgeschlagen";
+
+console.error(error);
 
 }
 
