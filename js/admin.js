@@ -1,6 +1,6 @@
 import {
 databases,
-DATABASE_ID,
+6a15726400182ebba703,
 NEWS_TABLE_ID,
 account
 }
@@ -70,7 +70,7 @@ try{
 
 await databases.createDocument(
 
-DATABASE_ID,
+6a15726400182ebba703,
 NEWS_TABLE_ID,
 
 ID.unique(),
@@ -138,7 +138,7 @@ document.getElementById(
 category:category,
 import {
 databases,
-DATABASE_ID
+6a15726400182ebba703
 }
 from "./appwrite.js";
 
@@ -162,7 +162,7 @@ async function loadMaintenance(){
 
 const doc =
 await databases.getDocument(
-DATABASE_ID,
+6a15726400182ebba703,
 SETTINGS_TABLE_ID,
 SETTINGS_DOC_ID
 );
@@ -183,14 +183,14 @@ async()=>{
 
 const doc =
 await databases.getDocument(
-DATABASE_ID,
+6a15726400182ebba703,
 SETTINGS_TABLE_ID,
 SETTINGS_DOC_ID
 );
 
 await databases.updateDocument(
 
-DATABASE_ID,
+6a15726400182ebba703,
 SETTINGS_TABLE_ID,
 SETTINGS_DOC_ID,
 
