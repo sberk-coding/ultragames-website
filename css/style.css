@@ -160,19 +160,33 @@ transform:translateY(-5px);
 
 /* STATUS */
 
-.status-box{
+.server-status-box{
 
 margin-top:50px;
 
-padding:30px;
+padding:25px;
+
+border-radius:25px;
 
 background:#ffffff08;
 
 border:1px solid #ffffff10;
 
-border-radius:25px;
+backdrop-filter:blur(12px);
 
-backdrop-filter:blur(10px);
+max-width:400px;
+
+margin-left:auto;
+margin-right:auto;
+}
+
+.server-status-box h3{
+
+font-size:2rem;
+
+color:#22d3ee;
+
+margin-bottom:10px;
 }
 
 /* PAGE */
