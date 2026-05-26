@@ -1,10 +1,128 @@
-<textarea
-id="newsInput"
-placeholder="News schreiben">
-</textarea>
+<!DOCTYPE html>
+<html lang="de">
+<head>
 
-<button id="publishBtn">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-News veröffentlichen
+  <title>UltraGames Admin</title>
 
-</button>
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link
+  href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap"
+  rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="admin-layout">
+
+  <!-- SIDEBAR -->
+
+  <aside class="sidebar">
+
+    <div class="logo">
+      ULTRAGAMES
+    </div>
+
+    <nav class="sidebar-nav">
+
+      <a href="./admin.html">
+        Dashboard
+      </a>
+
+      <a href="./news.html">
+        News
+      </a>
+
+      <a href="./index.html">
+        Website
+      </a>
+
+    </nav>
+
+  </aside>
+
+  <!-- CONTENT -->
+
+  <main class="admin-content">
+
+    <div class="admin-topbar">
+
+      <h1>
+        NEWS PANEL
+      </h1>
+
+      <button id="logoutBtn">
+        Logout
+      </button>
+
+    </div>
+
+    <!-- NEWS FORM -->
+
+    <div class="admin-card">
+
+      <h2>
+        Neue News erstellen
+      </h2>
+
+      <div class="input-group">
+
+        <label>
+          Autor
+        </label>
+
+        <input
+        type="text"
+        id="author"
+        placeholder="UltraOwner">
+
+      </div>
+
+      <div class="input-group">
+
+        <label>
+          Titel
+        </label>
+
+        <input
+        type="text"
+        id="title"
+        placeholder="Neues Update">
+
+      </div>
+
+      <div class="input-group">
+
+        <label>
+          Inhalt
+        </label>
+
+        <textarea
+        id="content"
+        placeholder="Schreibe deine News..."
+        rows="8"></textarea>
+
+      </div>
+
+      <button id="publishBtn" class="publish-btn">
+
+        NEWS VERÖFFENTLICHEN
+
+      </button>
+
+      <p id="statusMessage"></p>
+
+    </div>
+
+  </main>
+
+</div>
+
+<script type="module" src="./js/admin.js"></script>
+
+</body>
+</html>
