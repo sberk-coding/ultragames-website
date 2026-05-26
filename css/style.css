@@ -936,3 +936,73 @@ gap:20px;
 }
 
 }
+/* =========================
+NEWS PAGE
+========================= */
+
+.news-page{
+
+max-width:1200px;
+
+margin:auto;
+
+padding:80px 30px;
+}
+
+.news-title{
+
+font-size:4rem;
+
+text-align:center;
+
+margin-bottom:60px;
+}
+
+#newsContainer{
+
+display:flex;
+flex-direction:column;
+
+gap:30px;
+}
+
+.news-card{
+
+background:#ffffff08;
+
+border:
+1px solid #ffffff10;
+
+border-radius:30px;
+
+padding:35px;
+
+backdrop-filter:blur(12px);
+
+box-shadow:
+0 0 20px #22d3ee11;
+}
+
+.news-top{
+
+display:flex;
+justify-content:space-between;
+
+margin-bottom:20px;
+
+color:#22d3ee;
+}
+
+.news-heading{
+
+font-size:2rem;
+
+margin-bottom:20px;
+}
+
+.news-content{
+
+color:#cccccc;
+
+line-height:1.7;
+}
