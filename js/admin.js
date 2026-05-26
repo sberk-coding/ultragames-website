@@ -131,3 +131,7 @@ window.location.href =
 "./login.html";
 
 });
+const category =
+document.getElementById(
+"category"
+).value;
