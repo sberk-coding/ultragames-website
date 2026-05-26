@@ -5,8 +5,8 @@ from "./appwrite.js";
 
 const response =
 await databases.listDocuments(
-"DB_ID",
-"COLLECTION_ID"
+"6a15726400182ebba703",
+"news"
 );
 
 response.documents.forEach(doc=>{
